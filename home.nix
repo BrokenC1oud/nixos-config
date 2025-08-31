@@ -16,9 +16,7 @@
     userName = "BrokenC1oud";
     userEmail = "jgbsxx20130315@gmail.com";
 
-    configExtra = {
-      init.defaultBranch = "main";
-    };
+    extraConfig.init.defaultBranch = "master";
   };
 
   home.stateVersion = "25.05";
