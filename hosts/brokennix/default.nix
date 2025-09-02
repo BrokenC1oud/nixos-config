@@ -56,6 +56,7 @@
     isNormalUser = true;
     home = "/home/broken_cloud";
     extraGroups = [ "wheel" "networkmanager" ];
+    hashedPassword = "$y$j9T$KQgdtjldgy3sqilHoTlO2.$2GlCO17/hxHWdpb8Lrq2VKlGgDTktMFXAucfEAGh0qD";
   };
 
   environment.variables.EDITOR = "nvim";
