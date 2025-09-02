@@ -8,16 +8,24 @@
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
-    nixosConfigurations.brokennix = nixpkgs.lib.nixosSystem {
-      modules = [ 
-        ./configuration.nix
-	home-manager.nixosModules.home-manager
-	{
-	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.users.broken_cloud = ./home.nix;
-	}
-      ];
+    nixosConfigurations = {
+      brokennix = let
+        username = "broken_cloud";
+      in
+        nixpkgs.lib.nixosSystem {
+	  system = "x86_64-linux";
+
+	  modules = [
+	    ./hosts/brokennix
+
+	    home-manager,nixosModules.home-manager
+	    {
+	      home-manager.useGlobalPkgs = true;
+	      home-manager.useUserPackages = true;
+	      home-manager.users.${username} = import ./home.nix;
+	    }
+	  ];
+	};
     };
   };
 }
