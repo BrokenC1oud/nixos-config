@@ -6,7 +6,7 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enbale = true;
 
-  service.pipewire = {
+  services.pipewire = {
     enable = true;
     pulse.audio = true;
   };
