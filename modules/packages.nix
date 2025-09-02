@@ -8,7 +8,7 @@
 
   services.pipewire = {
     enable = true;
-    pulse.audio = true;
+    pulse.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
