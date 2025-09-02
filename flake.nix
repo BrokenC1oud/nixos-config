@@ -17,6 +17,7 @@
 
 	  modules = [
 	    ./hosts/brokennix
+	    ./modules/packages.nix
 
 	    home-manager.nixosModules.home-manager
 	    {
