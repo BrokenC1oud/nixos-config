@@ -1,7 +1,11 @@
 {
   pkgs,
   ...
-}: {
+}:
+let
+  comic-mono-liga = pkgs.callPackage ./fonts/comic-mono-liga.nix {};
+in
+{
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
@@ -19,6 +23,6 @@
   ];
 
   fonts.packages = with pkgs; [
-    pkgs.callPackage ./fonts/comic-mono-liga.nix
+    comic-mono-liga
   ];
 }
