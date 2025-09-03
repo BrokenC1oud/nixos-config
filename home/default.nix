@@ -24,6 +24,7 @@
     settings = {
       preset = "transgender";
       mode = "rgb";
+      pride_month_disable = false;
       color_align = {
         mode = "custom";
 	custom_colors = {
