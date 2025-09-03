@@ -7,7 +7,8 @@
     profiles = {
       default = {
         extensions = with pkgs.vscode-extensions; [
-          teabyii.ayu 
+          teabyii.ayu
+	  jnoortheen.nix-ide
         ];
 
 	userSettings = {
