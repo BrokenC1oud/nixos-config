@@ -16,7 +16,9 @@
     kitty
     wget
     git
+  ];
 
-    comic-mono-font
+  fonts.packages = with pkgs; [
+    comic-mono-liga = pkgs.callPackage ./fonts/comic-mono-liga.nix {};
   ];
 }
