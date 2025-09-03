@@ -5,7 +5,7 @@
   home.homeDirectory = "/home/broken_cloud";
 
   home.packages = with pkgs;[
-    hyfetch
+    fastfetch
 
     google-chrome
     tree
@@ -17,6 +17,22 @@
     userEmail = "jgbsxx20130315@gmail.com";
 
     extraConfig.init.defaultBranch = "master";
+  };
+
+  programs.hyfetch = {
+    enable = true;
+    settings = {
+      preset = "transgender";
+      mode = "rgb";
+      color_align: {
+        mode = "custom";
+	custom_colors = {
+	  1: 1;
+	  2: 0;
+	};
+      };
+      backend = "fastfetch";
+    };
   };
 
   home.stateVersion = "25.05";
