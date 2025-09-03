@@ -1,11 +1,12 @@
-{ 
-  config, 
-  lib, 
-  pkgs, 
+{
+  config,
+  lib,
+  pkgs,
   ...
-}: {
-  imports = [ 
-      ./hardware-configuration.nix
+}:
+{
+  imports = [
+    ./hardware-configuration.nix
   ];
 
   boot.loader = {
@@ -24,7 +25,7 @@
   networking.hostName = "broken_nix"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Asia/Shanghai";
@@ -55,7 +56,10 @@
   users.users.broken_cloud = {
     isNormalUser = true;
     home = "/home/broken_cloud";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
     hashedPassword = "$y$j9T$KQgdtjldgy3sqilHoTlO2.$2GlCO17/hxHWdpb8Lrq2VKlGgDTktMFXAucfEAGh0qD";
   };
 
@@ -102,9 +106,11 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   nix.settings.substituters = lib.mkForce [ "https://mirrors.cernet.edu.cn/nix-channels/store" ];
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "25.05"; # Did you read the comment?
 }
-

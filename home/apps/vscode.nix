@@ -1,25 +1,26 @@
 {
   pkgs,
   ...
-}: {
+}:
+{
   programs.vscode = {
     enable = true;
     profiles = {
       default = {
         extensions = with pkgs.vscode-extensions; [
           teabyii.ayu
-	  jnoortheen.nix-ide
+          jnoortheen.nix-ide
         ];
 
-	userSettings = {
-	  workbench.colorTheme = "Ayu Mirage Bordered";
-	  workbench.iconTheme = "ayu";
-	  editor.fontFamily = "Liga Comic Mono";
-	  editor.fontLigatures = true;
-	  explorer.confirmDelete = false;
+        userSettings = {
+          workbench.colorTheme = "Ayu Mirage Bordered";
+          workbench.iconTheme = "ayu";
+          editor.fontFamily = "Liga Comic Mono";
+          editor.fontLigatures = true;
+          explorer.confirmDelete = false;
           editor.fontSize = 16;
-	};
+        };
       };
     };
-  };  
+  };
 }

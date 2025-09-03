@@ -8,7 +8,7 @@
     ./apps/vscode.nix
   ];
 
-  home.packages = with pkgs;[
+  home.packages = with pkgs; [
     fastfetch
 
     google-chrome
@@ -31,10 +31,10 @@
       pride_month_disable = false;
       color_align = {
         mode = "custom";
-	custom_colors = {
-	  "1" = 1;
-	  "2" = 0;
-	};
+        custom_colors = {
+          "1" = 1;
+          "2" = 0;
+        };
       };
       backend = "fastfetch";
     };

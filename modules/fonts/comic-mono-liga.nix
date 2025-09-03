@@ -1,7 +1,8 @@
 {
   fetchFromGitHub,
   stdenvNoCC,
-}: stdenvNoCC.mkDerivation {
+}:
+stdenvNoCC.mkDerivation {
   pname = "comicMonoLiga";
   version = "0.1.2";
 
