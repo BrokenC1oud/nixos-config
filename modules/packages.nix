@@ -19,6 +19,6 @@
   ];
 
   fonts.packages = with pkgs; [
-    comic-mono-liga = pkgs.callPackage ./fonts/comic-mono-liga.nix {};
+    pkgs.callPackage ./fonts/comic-mono-liga.nix
   ];
 }
