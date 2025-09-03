@@ -1,5 +1,5 @@
 {
-  fetchFromGithub,
+  fetchFromGitHub,
   stdenvNoCC,
 }: stdenvNoCC.mkDerivation {
   pname = "comicMonoLiga";
