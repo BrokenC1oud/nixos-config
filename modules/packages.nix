@@ -20,6 +20,8 @@ in
     kitty
     wget
     git
+
+    pkgs.nixfmt-rfc-style
   ];
 
   fonts.packages = with pkgs; [
