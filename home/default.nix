@@ -4,6 +4,10 @@
   home.username = "broken_cloud";
   home.homeDirectory = "/home/broken_cloud";
 
+  imports = [
+    ./apps/vscode.nix
+  ];
+
   home.packages = with pkgs;[
     fastfetch
 

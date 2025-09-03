@@ -16,5 +16,7 @@
     kitty
     wget
     git
+
+    comic-mono-font
   ];
 }
