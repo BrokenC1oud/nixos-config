@@ -3,16 +3,12 @@
 {
   home.username = "broken_cloud";
   home.homeDirectory = "/home/broken_cloud";
+  home.stateVersion = "25.05";
 
   imports = [
     ./apps/vscode.nix
-  ];
 
-  home.packages = with pkgs; [
-    fastfetch
-
-    google-chrome
-    tree
+    ./packages.nix
   ];
 
   programs.git = {
@@ -39,6 +35,4 @@
       backend = "fastfetch";
     };
   };
-
-  home.stateVersion = "25.05";
 }
