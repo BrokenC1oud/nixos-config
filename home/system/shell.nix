@@ -35,4 +35,12 @@
       notify_on_cmd_finish = "unfocused";
     };
   };
+
+  programs.fish = {
+    enable = true;
+  };
+
+  programs.starship = {
+    enable = true;
+  };
 }
