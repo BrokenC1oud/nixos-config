@@ -61,6 +61,7 @@
       "networkmanager"
     ];
     hashedPassword = "$y$j9T$KQgdtjldgy3sqilHoTlO2.$2GlCO17/hxHWdpb8Lrq2VKlGgDTktMFXAucfEAGh0qD";
+    shell = pkgs.fish;
   };
 
   environment.variables.EDITOR = "nvim";
