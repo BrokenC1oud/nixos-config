@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     fastfetch
     tokei
+    btop
   ];
 
   programs.hyfetch = {
