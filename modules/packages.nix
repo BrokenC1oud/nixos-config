@@ -3,7 +3,7 @@
   ...
 }:
 let
-  comic-mono-liga = pkgs.callPackage ./fonts/comic-mono-liga.nix { };
+  comic-mono-liga = pkgs.callPackage ../packages/comic-mono-liga.nix { };
 in
 {
   services.desktopManager.plasma6.enable = true;
@@ -23,6 +23,8 @@ in
 
     pkgs.nixfmt-rfc-style
   ];
+
+  programs.fish.enable = true;
 
   fonts.packages = with pkgs; [
     comic-mono-liga
