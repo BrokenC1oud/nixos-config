@@ -9,30 +9,9 @@
     ./apps/vscode.nix
 
     ./packages.nix
+
+    ./system/git.nix
+    ./system/utils.nix
+    ./system/shell.nix
   ];
-
-  programs.git = {
-    enable = true;
-    userName = "BrokenC1oud";
-    userEmail = "jgbsxx20130315@gmail.com";
-
-    extraConfig.init.defaultBranch = "master";
-  };
-
-  programs.hyfetch = {
-    enable = true;
-    settings = {
-      preset = "transgender";
-      mode = "rgb";
-      pride_month_disable = false;
-      color_align = {
-        mode = "custom";
-        custom_colors = {
-          "1" = 1;
-          "2" = 0;
-        };
-      };
-      backend = "fastfetch";
-    };
-  };
 }
