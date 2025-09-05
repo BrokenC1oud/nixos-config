@@ -18,7 +18,6 @@ in
   environment.systemPackages = with pkgs; [
     neovim
     kitty
-    fish
     wget
     git
 
