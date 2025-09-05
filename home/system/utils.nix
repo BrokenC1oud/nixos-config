@@ -3,6 +3,9 @@
     fastfetch
     tokei
     btop
+    file
+    gnupg
+    lm_sensors
   ];
 
   programs.hyfetch = {
