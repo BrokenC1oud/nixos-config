@@ -4,5 +4,6 @@
     clash-verge-rev
     qq
     telegram-desktop
+    vlc
   ];
 }
