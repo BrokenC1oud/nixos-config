@@ -2,6 +2,6 @@
 
 This is my NixOS configurations.
 
-Migrating from archlinux to NixOS
+Migrating from ArchLinux to NixOS
 
 I use NixOS btw
