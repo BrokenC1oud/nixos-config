@@ -10,6 +10,7 @@
     ./system/fcitx5.nix
     ./system/fish.nix
     ./system/git.nix
+    ./system/gpg.nix
     ./system/hyfetch.nix
     ./system/nvim.nix
   ];
