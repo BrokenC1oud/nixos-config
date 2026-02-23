@@ -4,7 +4,6 @@
 {
   config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -34,7 +33,10 @@
   fileSystems."/nix" = {
     device = "/dev/disk/by-uuid/329d7c73-ce91-41a5-a62b-896cf4a063d8";
     fsType = "btrfs";
-    options = [ "subvol=nix" ];
+    options = [
+      "subvol=nix"
+      "noatime"
+    ];
   };
 
   fileSystems."/home" = {
