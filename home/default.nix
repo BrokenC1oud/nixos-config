@@ -1,6 +1,8 @@
 { ... }:
 {
   imports = [
+    ./packages.nix
+
     ./system/git.nix
     ./system/hyfetch.nix
   ];
