@@ -10,6 +10,8 @@
 
     extensions = [
       "nix"
+      "rust"
+      "toml"
     ];
 
     userSettings = {
