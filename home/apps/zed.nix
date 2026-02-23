@@ -11,5 +11,16 @@
     extensions = [
       "nix"
     ];
+
+    userSettings = {
+      theme = {
+        mode = "system";
+        light = "Ayu Light";
+        dark = "Ayu Dark";
+      };
+      terminal = {
+        dock = "bottom";
+      };
+    };
   };
 }
