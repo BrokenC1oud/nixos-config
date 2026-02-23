@@ -9,5 +9,8 @@
       };
       init.defaultBranch = "master";
     };
+    signing = {
+      key = "A017C9EE93481353";
+    };
   };
 }
