@@ -68,6 +68,7 @@
       hyfetch
     ];
     hashedPassword = "$6$B1Ix6fMgiUfeYidU$YBooHXiBHhc0lJJTMGSZWSIqdYF5O6aken4iU2aTOegAwJRZwUSlrIIX/X/bT9HblUaT0sDiJ6O4KOUXxMaTr";
+    shell = pkgs.fish;
   };
 
   # programs.firefox.enable = true;

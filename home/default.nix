@@ -4,10 +4,12 @@
     ./packages.nix
 
     ./apps/chromium.nix
+    ./apps/kitty.nix
     ./apps/zed.nix
 
     ./system/git.nix
     ./system/hyfetch.nix
+    ./system/fish.nix
   ];
 
   home.username = "broken_cloud";
