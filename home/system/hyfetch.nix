@@ -8,8 +8,8 @@
       color_align = {
         mode = "custom";
 	custom_colors = {
-	  "1": 0;
-	  "2": 1;
+	  "1" = 0;
+	  "2" = 1;
 	};
       };
     };
