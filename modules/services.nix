@@ -16,12 +16,4 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
-  services.gpg-agent = {
-    enable = true;
-    enableSshSupport = true;
-    enableFishIntegration = true;
-    # pinentry is a collection of simple PIN or passphrase dialogs used for
-    # password entry
-    pinentryPackage = pkgs.pinentry-qt;
-  };
 }
