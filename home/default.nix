@@ -7,6 +7,7 @@
     ./apps/kitty.nix
     ./apps/zed.nix
 
+    ./system/fcitx5.nix
     ./system/git.nix
     ./system/hyfetch.nix
     ./system/fish.nix

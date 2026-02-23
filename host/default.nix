@@ -42,6 +42,16 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+  i18n.inputMethod = {
+    type = "fcitx5";
+    enable = true;
+    fcitx5.addons = with pkgs; [
+      qt6Packages.fcitx5-gtk
+      fcitx5-gtk
+      fcitx5-chinese-addons
+      fcitx5-nord
+    ];
+  };
   # console = {
   #   font = "Lat2-Terminus16";
   #   keyMap = "us";
