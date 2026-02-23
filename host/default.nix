@@ -67,6 +67,7 @@
       kitty
       hyfetch
     ];
+    hashedPassword = "$6$B1Ix6fMgiUfeYidU$YBooHXiBHhc0lJJTMGSZWSIqdYF5O6aken4iU2aTOegAwJRZwUSlrIIX/X/bT9HblUaT0sDiJ6O4KOUXxMaTr";
   };
 
   # programs.firefox.enable = true;
