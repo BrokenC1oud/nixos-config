@@ -11,6 +11,7 @@
     };
     signing = {
       key = "537AD26C1119CB8CB8ED33A6A017C9EE93481353";
+      signByDefault = true;
     };
   };
 }
