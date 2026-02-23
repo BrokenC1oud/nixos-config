@@ -5,6 +5,13 @@
     settings = {
       preset = "transgender";
       mode = "rgb";
+      color_align = {
+        mode = "custom";
+	custom_colors = {
+	  "1": 0;
+	  "2": 1;
+	};
+      };
     };
   };
 }
