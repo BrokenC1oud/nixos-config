@@ -13,6 +13,7 @@
 	};
       };
       backend = "neofetch";
+      pride_month_disable = false;
     };
   };
 }
