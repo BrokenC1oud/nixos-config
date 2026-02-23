@@ -9,6 +9,6 @@
     enableSshSupport = true;
     enableExtraSocket = true;
     enableFishIntegration = true;
-    pinentryPackage = pkgs.pinentry-qt;
+    pinentry.package = pkgs.pinentry-qt;
   };
 }
