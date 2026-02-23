@@ -2,6 +2,7 @@
 {
   imports = [
     ./system/git.nix
+    ./system/hyfetch.nix
   ];
 
   home.username = "broken_cloud";
