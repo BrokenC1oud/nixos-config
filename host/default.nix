@@ -64,13 +64,13 @@
       "networkmanager"
     ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      fish
     ];
     hashedPassword = "$6$B1Ix6fMgiUfeYidU$YBooHXiBHhc0lJJTMGSZWSIqdYF5O6aken4iU2aTOegAwJRZwUSlrIIX/X/bT9HblUaT0sDiJ6O4KOUXxMaTr";
     shell = pkgs.fish;
   };
 
   # programs.firefox.enable = true;
+  programs.fish.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
