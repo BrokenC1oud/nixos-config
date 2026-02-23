@@ -2,6 +2,8 @@
 {
   imports = [
     ./packages.nix
+    
+    ./apps/chromium.nix
 
     ./system/git.nix
     ./system/hyfetch.nix
