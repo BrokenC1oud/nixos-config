@@ -23,6 +23,14 @@
       terminal = {
         dock = "bottom";
       };
+      lsp = {
+        rust-analyzer = {
+          binary = {
+            path = "${pkgs.rust-analyzer}/bin/rust-analyzer";
+            arguments = [ ];
+          };
+        };
+      };
     };
   };
 }
