@@ -2,7 +2,6 @@
   description = "my nixos configuration";
 
   nixConfig = {
-    config.allowUnfree = true;
     substituters = [
       "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
     ];
