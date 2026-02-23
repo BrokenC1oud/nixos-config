@@ -21,6 +21,8 @@
       modules = [
         ./host
 
+	./modules/fonts.nix
+
 	home-manager.nixosModules.home-manager
 
 	{
