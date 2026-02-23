@@ -21,7 +21,7 @@
   };
 
   home.file."./.config/nvim" = {
-    source = ../../nvim-config;
+    source = ../../nvim;
     recursive = true;
   };
 }
