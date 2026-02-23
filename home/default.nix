@@ -5,6 +5,7 @@
 
     ./apps/chromium.nix
     ./apps/kitty.nix
+    ./apps/prismlauncher.nix
     ./apps/zed.nix
 
     ./system/fcitx5.nix
