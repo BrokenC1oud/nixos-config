@@ -10,6 +10,8 @@
   ];
 
   programs.fish.enable = true;
+  programs.neovim.enable = true;
+  programs.neovim.defaultEditor = true;
 
   nixpkgs.config.allowUnfree = true;
 }
