@@ -12,6 +12,7 @@
       "nix"
       "rust"
       "toml"
+      "lua"
     ];
 
     userSettings = {
