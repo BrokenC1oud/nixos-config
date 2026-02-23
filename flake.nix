@@ -13,43 +13,33 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    chinese-fonts-overlay.url = "github:brsvh/chinese-fonts-overlay/main";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, chinese-fonts-overlay, ... }: {
-    nixosConfigurations.brokencloud = nixpkgs.lib.nixosSystem {
-      modules = [
-        ./host
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }:
+    {
+      nixosConfigurations.brokencloud = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./host
 
-	./modules/fonts.nix
+          ./modules/fonts.nix
+          ./modules/packages.nix
+          ./modules/services.nix
 
-	home-manager.nixosModules.home-manager
+          home-manager.nixosModules.home-manager
 
-	{
-	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.extraSpecialArgs = { inherit inputs; };
-	  home-manager.users.broken_cloud = import ./home;
-	}
-
-	(
-	  { pkgs, ... }:
-	  {
-	    nixpkgs = {
-	      config.allowUnfree = true;
-	      overlays = [
-	        inputs.chinese-fonts-overlay.overlays.default
-	      ];
-	    };
-	    fonts.packages = with pkgs; [
-	      foundertypeFonts.FZHTK
-	      foundertypeFonts.FZSSK
-	      foundertypeFonts.FZFSK
-	      foundertypeFonts.FZKTK
-	    ];
-	  }
-	)
-      ];
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.users.broken_cloud = import ./home;
+          }
+        ];
+      };
     };
-  };
 }
