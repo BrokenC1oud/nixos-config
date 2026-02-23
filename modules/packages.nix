@@ -13,5 +13,10 @@
   programs.neovim.enable = true;
   programs.neovim.defaultEditor = true;
 
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
 }
