@@ -64,8 +64,7 @@
       "networkmanager"
     ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      kitty
-      hyfetch
+      fish
     ];
     hashedPassword = "$6$B1Ix6fMgiUfeYidU$YBooHXiBHhc0lJJTMGSZWSIqdYF5O6aken4iU2aTOegAwJRZwUSlrIIX/X/bT9HblUaT0sDiJ6O4KOUXxMaTr";
     shell = pkgs.fish;
