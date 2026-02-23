@@ -16,7 +16,7 @@
     chinese-fonts-overlay.url = "github:brsvh/chinese-fonts-overlay/main";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, chinese-fonts-overlay, ... }: {
     nixosConfigurations.brokencloud = nixpkgs.lib.nixosSystem {
       modules = [
         ./host
