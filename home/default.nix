@@ -8,9 +8,10 @@
     ./apps/zed.nix
 
     ./system/fcitx5.nix
+    ./system/fish.nix
     ./system/git.nix
     ./system/hyfetch.nix
-    ./system/fish.nix
+    ./system/nvim.nix
   ];
 
   home.username = "broken_cloud";
