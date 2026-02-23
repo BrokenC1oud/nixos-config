@@ -4,6 +4,7 @@
     ./packages.nix
     
     ./apps/chromium.nix
+    ./apps/zed.nix
 
     ./system/git.nix
     ./system/hyfetch.nix
