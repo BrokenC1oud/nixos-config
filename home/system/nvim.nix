@@ -17,7 +17,7 @@
       lua-language-server
       stylua
       nil
-      rust-rust-analyzer
+      rust-analyzer
       rustc
       cargo
       rustfmt
