@@ -11,6 +11,8 @@
 
         extensions = with pkgs.vscode-extensions; [
           ms-python.python
+          ms-python.vscode-pylance
+          ms-python.debugpy
         ];
       };
     };
