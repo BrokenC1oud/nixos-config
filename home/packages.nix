@@ -11,5 +11,6 @@
     telegram-desktop
     tokei
     vlc
+    wechat
   ];
 }
