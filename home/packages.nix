@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     clash-verge-rev
+    discord-ptb
     gdu
     (gimp-with-plugins.override {
       plugins = [ gimpPlugins.resynthesizer ];
