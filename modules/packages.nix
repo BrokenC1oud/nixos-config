@@ -24,8 +24,8 @@
     extraPackages = with pkgs; [
       wl-clipboard
     ];
-    environment.sessionVariables.NIXOS_OZONE_WL = "1";
   };
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   nixpkgs.config.allowUnfree = true;
 }
