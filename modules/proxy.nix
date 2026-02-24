@@ -1,6 +1,6 @@
 { ... }:
 {
-programs.proxychains = {
+  programs.proxychains = {
     enable = true;
     proxies = {
       prx1 = {
@@ -10,6 +10,7 @@ programs.proxychains = {
         port = 2080;
       };
     };
+  };
 
   programs.throne = {
     enable = true;
