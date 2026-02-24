@@ -12,6 +12,7 @@
   programs.fish.enable = true;
   programs.neovim.enable = true;
   programs.neovim.defaultEditor = true;
+  programs.nix-ld.enable = true;
 
   programs.steam = {
     enable = true;

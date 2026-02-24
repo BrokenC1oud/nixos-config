@@ -17,6 +17,11 @@
       lua-language-server
       stylua
       nil
+      rust-rust-analyzer
+      rustc
+      cargo
+      rustfmt
+      clippy
     ];
   };
 
