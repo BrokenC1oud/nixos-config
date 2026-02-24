@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     nixd
     nil
+    rust-analyzer
   ];
 
   programs.zed-editor = {
