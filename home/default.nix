@@ -10,6 +10,7 @@
     ./apps/zed.nix
 
     ./desktop/plasma.nix
+    ./desktop/sway.nix
 
     ./system/fcitx5.nix
     ./system/fish.nix
