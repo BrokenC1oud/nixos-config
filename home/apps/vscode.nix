@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, ... }:
 {
   programs.vscode = {
     enable = true;
@@ -9,8 +9,8 @@
           "workbench.colorTheme" = "Solarized Dark";
         };
 
-        extensions = [
-
+        extensions = with pkgs.vscode-extensions [
+          ms-python.python
         ];
       };
     };
