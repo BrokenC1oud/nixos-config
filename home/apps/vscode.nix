@@ -9,7 +9,7 @@
           "workbench.colorTheme" = "Solarized Dark";
         };
 
-        extensions = with pkgs.vscode-extensions [
+        extensions = with pkgs.vscode-extensions; [
           ms-python.python
         ];
       };
