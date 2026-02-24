@@ -20,8 +20,8 @@
       scrollback_pager_history_size = 64;
 
       remember_window_size = "no";
-      initial_window_width = 640;
-      initial_window_height = 400;
+      initial_window_width = 800;
+      initial_window_height = 600;
       confirm_os_window_close = 0;
 
       tab_bar_edge = "top";
