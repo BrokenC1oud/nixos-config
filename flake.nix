@@ -35,6 +35,7 @@
 
           ./modules/fonts.nix
           ./modules/packages.nix
+          ./modules/proxy.nix
           ./modules/services.nix
 
           home-manager.nixosModules.home-manager
