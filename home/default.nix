@@ -9,6 +9,8 @@
     ./apps/vscode.nix
     ./apps/zed.nix
 
+    ./desktop/plasma.nix
+
     ./system/fcitx5.nix
     ./system/fish.nix
     ./system/git.nix
