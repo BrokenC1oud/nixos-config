@@ -1,22 +1,23 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   wayland.windowManager.sway = {
     enable = true;
 
-    config = rec {
+    config = {
       modifier = "Mod4";
       terminal = "kitty";
-    };
-  };
+      menu = "${pkgs.wofi}/bin/wofi --show drun";
 
-  programs.waybar = {
-    enable = true;
-    settings = [
-      {
-        layer = "top";
-        position = "top";
-      }
-    ];
+      bars = [
+        {
+          position = "top";
+        }
+      ];
+
+      keybindings = lib.mkOptionDefault {
+        "${modifier}+Space" = "exec ${menu}";
+      };
+    };
   };
 
   home.packages = with pkgs; [
