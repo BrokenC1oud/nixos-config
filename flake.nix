@@ -13,6 +13,7 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs =
@@ -20,6 +21,7 @@
       self,
       nixpkgs,
       home-manager,
+      nix-vscode-extensions,
       ...
     }:
     {
