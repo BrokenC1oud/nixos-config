@@ -18,6 +18,7 @@
     ./system/gpg.nix
     ./system/hyfetch.nix
     ./system/nvim.nix
+    ./system/utils.nix
   ];
 
   home.username = "broken_cloud";
