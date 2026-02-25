@@ -4,6 +4,7 @@
     nixd
     nil
     rust-analyzer
+    zls
   ];
 
   programs.zed-editor = {
@@ -14,6 +15,7 @@
       "rust"
       "toml"
       "lua"
+      "zig"
     ];
 
     userSettings = {
