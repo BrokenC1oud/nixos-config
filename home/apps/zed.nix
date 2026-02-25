@@ -5,6 +5,7 @@
     nil
     rust-analyzer
     zls
+    clang-tools
   ];
 
   programs.zed-editor = {
@@ -16,6 +17,7 @@
       "toml"
       "lua"
       "zig"
+      "cpp"
     ];
 
     userSettings = {
