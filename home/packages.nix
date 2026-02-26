@@ -7,6 +7,7 @@
       plugins = [ gimpPlugins.resynthesizer ];
     })
     libreoffice-fresh
+    kdePackages.kdenlive
     qq
     telegram-desktop
     vlc
