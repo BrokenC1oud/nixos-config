@@ -4,6 +4,7 @@
     ./packages.nix
 
     ./apps/chromium.nix
+    ./apps/jetbrains.nix
     ./apps/kitty.nix
     ./apps/prismlauncher.nix
     ./apps/vscode.nix
