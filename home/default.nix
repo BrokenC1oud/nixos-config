@@ -13,6 +13,7 @@
     ./desktop/plasma.nix
     ./desktop/sway.nix
 
+    ./system/direnv.nix
     ./system/fcitx5.nix
     ./system/fish.nix
     ./system/git.nix
