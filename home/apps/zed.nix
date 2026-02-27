@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 {
   home.packages = with pkgs; [
     nixd
@@ -31,10 +31,7 @@
       };
       lsp = {
         rust-analyzer = {
-          binary = {
-            path = "${pkgs.rust-analyzer}/bin/rust-analyzer";
-            arguments = [ ];
-          };
+          path = lib.getExe pkgs.rust-analyzer;
         };
       };
     };
