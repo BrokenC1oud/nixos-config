@@ -8,6 +8,7 @@
       default = {
         userSettings = {
           "workbench.colorTheme" = "Solarized Dark";
+          "editor.fontSize" = 18;
         };
 
         extensions = with pkgs.vscode-extensions; [
