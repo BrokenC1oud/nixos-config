@@ -11,5 +11,6 @@
     qq
     telegram-desktop
     vlc
+    wechat
   ];
 }
