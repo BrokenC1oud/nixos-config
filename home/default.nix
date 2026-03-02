@@ -6,6 +6,7 @@
     ./apps/chromium.nix
     ./apps/jetbrains.nix
     ./apps/kitty.nix
+    ./apps/obs.nix
     ./apps/prismlauncher.nix
     ./apps/vscode.nix
     ./apps/zed.nix

@@ -16,7 +16,10 @@
           ms-python.vscode-pylance
           ms-python.debugpy
 
-          rust-lang.rust-analyzer
+          pkgs.vscode-utils.buildVscodeExtension
+          {
+
+          }
           tamasfe.even-better-toml
         ];
       };
