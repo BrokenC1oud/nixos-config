@@ -16,10 +16,6 @@
           ms-python.vscode-pylance
           ms-python.debugpy
 
-          pkgs.vscode-utils.buildVscodeExtension
-          {
-
-          }
           tamasfe.even-better-toml
         ];
       };
