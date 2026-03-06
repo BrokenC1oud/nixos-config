@@ -17,6 +17,10 @@
           ms-python.debugpy
 
           tamasfe.even-better-toml
+
+          ms-vscode-remote.remote-ssh
+          ms-vscode-remote.remote-ssh-edit
+          ms-vscode.remote-explorer
         ];
       };
     };

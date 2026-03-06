@@ -35,5 +35,7 @@
   virtualisation.podman.dockerSocket.enable = true;
   virtualisation.podman.defaultNetwork.settings.dns_enabled = true;
 
+  virtualisation.virtualbox.host.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 }
