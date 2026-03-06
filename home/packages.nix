@@ -7,6 +7,7 @@
       plugins = [ gimpPlugins.resynthesizer ];
     })
     libreoffice-fresh
+    lunar-client
     kdePackages.kdenlive
     qq
     telegram-desktop
