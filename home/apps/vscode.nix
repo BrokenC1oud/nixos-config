@@ -17,8 +17,6 @@
           ms-python.debugpy
 
           tamasfe.even-better-toml
-
-          bbenoist.Nix
         ];
       };
     };
