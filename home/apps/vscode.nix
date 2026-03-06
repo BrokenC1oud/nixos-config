@@ -7,7 +7,7 @@
     profiles = {
       default = {
         userSettings = {
-          "workbench.colorTheme" = "Solarized Dark";
+          "workbench.colorTheme" = "Quiet Light";
           "editor.fontSize" = 18;
         };
 

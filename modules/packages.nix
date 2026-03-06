@@ -27,5 +27,9 @@
   };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+  virtualisation.docker = {
+    enable = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
 }
