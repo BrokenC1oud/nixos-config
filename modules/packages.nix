@@ -7,6 +7,9 @@
     wget
     git
     fish
+
+    arion
+    docker-client
   ];
 
   programs.fish.enable = true;
@@ -27,9 +30,10 @@
   };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  virtualisation.docker = {
-    enable = true;
-  };
+  virtualisation.docker.enable = false;
+  virtualisation.podman.enable = true;
+  virtualisation.podman.dockerSocket.enable = true;
+  virtualisation.podman.defaultNetwork.dnsname.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 }
